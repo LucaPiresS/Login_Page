@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Travel.com</h1>
+        <nav>
+            <ul class="lista">
+                <li class="item__lista">Home</li>
+                <li class="item__lista">Services</li>
+                <li class="item__lista">Contact</li>
+                <li class="item__lista">About</li>
+            </ul>
+        </nav>
+        <img src="icons/sol.png" alt="ícone do sol" class="icon sol" id="sol">
+        <img src="icons/lua.png" alt="ícone da lua" class="icon lua" id="lua">
+    </header>
+
+    <main>
+        <h1 class="titulo">LOGIN</h1>
+
+        <form class="formulario">
+            <div class="input__pequeno">
+                <!--div criada para agrupar dois input's pequenos, ela foi criada para ficar mais facil de alinhar com os demais elemnetos-->
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <input type="email" class="info" placeholder="Email">
+            <input type="password" class="info" placeholder="Passowrd">
+
+            <div class="check__texto">
+                <!--div criada para agrupar a checkbox, otexto "remember me" e o link "forget passowrd"-->
+                <div class="check__container">
+                    <!--div craiada para agrupar a checbox com o texto "remember me", assim, eles ficarão perto um do outro.-->
+                        <input type="checkbox" class="check">
+                        <p>Remeber me</p>
+                </div>
+                <a href="#">Forget Passowrd?</a>
+            </div>
+
+            <button class="btn">Login</button>
+
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
