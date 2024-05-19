@@ -1,23 +1,9 @@
-
-@keyframes inicio_container{
-    from {transform: translateY(100px); opacity: 0.0;}
-    to {transform: translateY(0px); opacity: 1;}
-}
-
-@keyframes inicio__header{
-    from {opacity: 0.0;}
-    to {opacity: 1;}
-}
-
-/*ANIMAÇÕES ^*/
-
 :root {
     --preto: #000;
     --branco: #fff;
     --branco__botao: #ffffffd7;
     --titulo: "Archivo Black", sans-serif;
     --texto: "Arimo", sans-serif;
-      
 }
 
 
@@ -93,6 +79,10 @@ header * {
     display: none;
 }
 
+.menu__hamburguer{
+    display: none;
+}
+
 main {
     padding: 15px;
     width: 50%;
@@ -111,10 +101,25 @@ main {
     animation: inicio_container 1.5s;
 }
 
+main .titulo {
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+}
+
+.input__pequeno {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__pequeno input {
+    width: 48%;
 }
 
 input {
@@ -186,36 +191,4 @@ a {
     font-size: 18px;
     font-family: var(--texto);
     cursor: pointer;
-}
-
-
-/*DARK MODE*/
-
-
-.dark__mode{
-    background-image: url(../img/bg__noite.jpeg);
-}
-
-.dark__mode *, .dark__mode ::placeholder {
-    color: var(--branco);
-}
-
-.dark__mode input, .dark__mode main, .dark__mode .btn {
-    border: 2px solid var(--branco);
-}
-
-.dark__mode .btn:hover {
-    background-color: #ffffff62;
-}
-
-.dark__mode .sol {
-    display: none;
-}
-
-.dark__mode .lua {
-    display: block;
-}
-
-.dark__mode .item__lista::after {
-    background-color: var(--branco);
 }

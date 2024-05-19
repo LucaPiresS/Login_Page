@@ -15,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dark__mode.css">
+    <link rel="stylesheet" href="styles/animacoes.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
+    <link rel="stylesheet" href="styles/menu__hamburguer.css">
 
     <title>Login Page</title>
 </head>
@@ -22,8 +26,8 @@
 <body>
 
     <header>
-        <h1 class="titulo">Travel.com</h1>
-        <nav>
+        <h1 class="titulo" id="titulo">Travel.com</h1>
+        <nav id="nav">
             <ul class="lista">
                 <li class="item__lista">Home</li>
                 <li class="item__lista">Services</li>
@@ -31,8 +35,15 @@
                 <li class="item__lista">About</li>
             </ul>
         </nav>
+
         <img src="icons/sol.png" alt="ícone do sol" class="icon sol" id="sol">
         <img src="icons/lua.png" alt="ícone da lua" class="icon lua" id="lua">
+
+        <div class="menu__hamburguer" id="menu"><!-- menu hamburguer-->
+            <div class="linha__topo" id="linha__topo"></div>
+            <div class="linha__meio" id="linha__meio"></div>
+            <div class="linha__baixo" id="linha__baixo"></div>
+        </div>
     </header>
 
     <main>
@@ -65,7 +76,8 @@
 
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

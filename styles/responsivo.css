@@ -1,0 +1,33 @@
+@media screen and (max-width: 682px) {/*tela pequenas*/
+    header {
+        height: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    main {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .input__pequeno {
+        display: flex;
+    }
+
+    .input__pequeno input {
+        width: 50%;
+    }
+
+    p, a,input::placeholder{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-height: 800px) {
+    main {
+        margin-top: 10VH;
+    }
+}

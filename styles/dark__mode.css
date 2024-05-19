@@ -1,0 +1,27 @@
+.dark__mode{
+    background-image: url(../img/bg__noite.jpeg);
+}
+
+.dark__mode *, .dark__mode ::placeholder {
+    color: var(--branco);
+}
+
+.dark__mode input, .dark__mode main, .dark__mode .btn {
+    border: 2px solid var(--branco);
+}
+
+.dark__mode .btn:hover {
+    background-color: #ffffff62;
+}
+
+.dark__mode .sol {
+    display: none;
+}
+
+.dark__mode .lua {
+    display: block;
+}
+
+.dark__mode .item__lista::after {
+    background-color: var(--branco);
+}
