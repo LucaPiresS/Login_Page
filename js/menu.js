@@ -1,11 +1,14 @@
-var menu = document.getElementById("menu")
-var nav = document.getElementById("nav")
-var titulo = document.getElementById("titulo")
+var btn = document.getElementById('btn__abrir__menu')
+var menu = document.getElementById('menu')
+var btn__fechar = document.getElementById('btn__fechar')
 
-menu.addEventListener('click', click)
+btn.addEventListener('click', () => {
+    menu.classList.add('abrir__menu')
+    btn.classList.add('btn__fechar')
+    btn.style.display = 'none'
+})
 
-function click() {
-    menu.classList.toggle("toggle")
-    nav.classList.toggle("toggle__nav")
-    titulo.classList.toggle("toggle__titulo")
-}
+btn__fechar.addEventListener('click', () => {
+    menu.classList.remove('abrir__menu')
+    btn.style.display = 'flex'
+})

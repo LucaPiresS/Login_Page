@@ -27,7 +27,7 @@
 
     <header>
         <h1 class="titulo" id="titulo">Travel.com</h1>
-        <nav id="nav">
+        <nav class="nav__desktop">
             <ul class="lista">
                 <li class="item__lista">Home</li>
                 <li class="item__lista">Services</li>
@@ -40,10 +40,26 @@
         <img src="icons/lua.png" alt="ícone da lua" class="icon lua" id="lua">
 
         <!-- menu hamburguer-->
-        <div class="menu__hamburguer" id="menu">
+        <div class="btn__abrir__menu" id="btn__abrir__menu">
             <div class="linha__topo" id="linha__topo"></div>
             <div class="linha__meio" id="linha__meio"></div>
             <div class="linha__baixo" id="linha__baixo"></div>
+        </div>
+        <div class="menu__hamburguer" id="menu">
+
+            <div class="icone__fechar" id="btn__fechar">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+            </div>
+
+            <nav>
+                <ul class="lista">
+                    <li class="item__lista">Home</li>
+                    <li class="item__lista">Services</li>
+                    <li class="item__lista">Contact</li>
+                    <li class="item__lista">About</li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -64,8 +80,8 @@
                 <!--div criada para agrupar a checkbox, otexto "remember me" e o link "forget passowrd"-->
                 <div class="check__container">
                     <!--div craiada para agrupar a checbox com o texto "remember me", assim, eles ficarão perto um do outro.-->
-                        <input type="checkbox" class="check">
-                        <p>Remeber me</p>
+                    <input type="checkbox" class="check">
+                    <p>Remeber me</p>
                 </div>
                 <a href="#">Forget Passowrd?</a>
             </div>
