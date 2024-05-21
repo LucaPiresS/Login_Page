@@ -25,3 +25,7 @@
 .dark__mode .item__lista::after {
     background-color: var(--branco);
 }
+
+.dark__mode main {
+    animation: dark__mode 1.5s;
+}

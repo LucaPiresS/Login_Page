@@ -9,7 +9,8 @@
     to {opacity: 1;}
 }
 
-@keyframes nav {
-    from {transform: translateX(100px);}
-    to {transform: translateX(0px);}
+@keyframes dark__mode{
+    from {transform: translateY(100px); opacity: 0.0;}
+    to {transform: translateY(0px); opacity: 1;}
 }
+

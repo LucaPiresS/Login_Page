@@ -1,5 +1,9 @@
 
 @media screen and (max-width: 682px) {
+    body {
+        overflow: hidden;
+    }
+    
     .menu__hamburguer {
         display: block;
         width: 40px;
@@ -8,6 +12,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        z-index: 10;
     }
     
     .linha__topo, .linha__meio, .linha__baixo {
@@ -17,24 +22,16 @@
         background-color: var(--preto);
     }
     
-    .linha__topo {  
-        animation: linha__menu 2s;
-    }
-    
     .dark__mode .linha__topo, .dark__mode .linha__meio, .dark__mode .linha__baixo {
         background-color: var(--branco);
     }
-    
+
 /*PARTE DO TOGGLE*/
 
-    .toggle__titulo{
-        transform: translateX(-24px);
-        transition: 0s;
-    }
 
     .toggle{
         justify-content: center;
-        z-index: 2;
+        z-index: 3;
     }
     
     .toggle .linha__topo {
@@ -52,31 +49,28 @@
     .toggle .linha__baixo {
         transform: rotate(405deg);
     }
-    
-    .toggle .linha__meio, .toggle.linha__baixo {
-        transition: 1s;
+
+    .toggle .linha__meio, .toggle .linha__baixo{
+        transition: transform 1s cubic-bezier(0.09, 0.06, 0.23, 1.15);
     }
 
     .toggle__nav{
         display: block;
         position: absolute;
-        background-color: #00000080;
-        width: 40%;
-        height: 100vh;
         top: 0;
         right: 0;
-        z-index: 1;
-        padding-top: 100px;
+        background-color: #000000b4;
         color: var(--branco);
         text-align: center;
-        text-transform: uppercase;
-
-        animation: nav 500ms;
-        transition: 1s;
+        width: 35vw;
+        height:100vh;
+        z-index: 2;
+        padding-top: 100px;
+    
     }
 
     .toggle__nav .item__lista{
-        margin-top: 50px;
+        margin: 50px 0 ;
         display: block;
     }
 
