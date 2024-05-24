@@ -5,10 +5,10 @@ var btn__fechar = document.getElementById('btn__fechar')
 btn.addEventListener('click', () => {
     menu.classList.add('abrir__menu')
     btn.classList.add('btn__fechar')
-    btn.style.display = 'none'
+    btn.style.opacity = '0.0'
 })
 
 btn__fechar.addEventListener('click', () => {
     menu.classList.remove('abrir__menu')
-    btn.style.display = 'flex'
+    btn.style.opacity = '1'
 })
