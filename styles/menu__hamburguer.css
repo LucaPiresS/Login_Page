@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 682px) {
     
     .menu__hamburguer {
@@ -39,7 +38,7 @@
         background-color: var(--branco);
     }
 
-/*css do icone de abrir omenu hamburguer*/
+/*css do icone de abrir o menu hamburguer*/
     .linha__topo, .linha__meio, .linha__baixo {
         display: block;
         width: 100%;
